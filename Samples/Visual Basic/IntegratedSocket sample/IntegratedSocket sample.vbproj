@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AssemblyName>IntegratedSocket sample</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>IntegratedSocket_sample</RootNamespace>
+    <ProjectTypeGuids>{bb063c12-22d6-4e50-a55f-f678d783e61d};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <ProjectGuid>{A2E6C02E-F9FB-415E-A1D9-3F22D0059D5C}</ProjectGuid>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <MyType>Console</MyType>
+    <AssemblyBothEndian>true</AssemblyBothEndian>
+    <TargetFrameworkVersion>v4.2</TargetFrameworkVersion>
+    <NetMfTargetsBaseDir Condition="'$(NetMfTargetsBaseDir)'==''">$(MSBuildExtensionsPath32)\Microsoft\.NET Micro Framework\</NetMfTargetsBaseDir>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <StartupObject>Sub Main</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <StartupObject>Sub Main</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(NetMfTargetsBaseDir)$(TargetFrameworkVersion)\VisualBasic.Targets" />
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="Module1.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SPOT.Hardware" />
+    <Reference Include="Microsoft.SPOT.Native" />
+    <Reference Include="SecretLabs.NETMF.Hardware" />
+    <Reference Include="SecretLabs.NETMF.Hardware.NetduinoPlus" />
+    <Reference Include="Toolbox.NETMF.NET.Core">
+      <HintPath>..\..\..\Release (4.2)\Toolbox.NETMF.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Toolbox.NETMF.NET.Integrated">
+      <HintPath>..\..\..\Release (4.2)\Toolbox.NETMF.NET.Integrated.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="System" />
+    <Import Include="System.Threading" />
+  </ItemGroup>
+</Project>

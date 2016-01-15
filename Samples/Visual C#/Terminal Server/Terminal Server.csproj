@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AssemblyName>Terminal Server</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Terminal_Server</RootNamespace>
+    <ProjectTypeGuids>{b69e3092-b931-443c-abe7-7e7b65f2a37f};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E458453D-6657-41E1-B0C1-CF0E962A60C4}</ProjectGuid>
+    <TargetFrameworkVersion>v4.2</TargetFrameworkVersion>
+    <NetMfTargetsBaseDir Condition="'$(NetMfTargetsBaseDir)'==''">$(MSBuildExtensionsPath32)\Microsoft\.NET Micro Framework\</NetMfTargetsBaseDir>
+    <DeployDevice>Netduino</DeployDevice>
+    <DeployTransport>USB</DeployTransport>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <Import Project="$(NetMfTargetsBaseDir)$(TargetFrameworkVersion)\CSharp.Targets" />
+  <ItemGroup>
+    <Compile Include="Programs\Auth.cs" />
+    <Compile Include="Programs\ColorDemo.cs" />
+    <Compile Include="Programs\DateTime.cs" />
+    <Compile Include="Programs\Edlin.cs" />
+    <Compile Include="Programs\FileSystem.cs" />
+    <Compile Include="Programs\NetduinoPlus.cs" />
+    <Compile Include="Programs\NetworkInfo.cs" />
+    <Compile Include="Programs\Ntp.cs" />
+    <Compile Include="Programs\Pins.cs" />
+    <Compile Include="Programs\Serial.cs" />
+    <Compile Include="Programs\ShellCommands.cs" />
+    <Compile Include="Programs\ShellCore.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SPOT.Hardware" />
+    <Reference Include="Microsoft.SPOT.Hardware.SerialPort" />
+    <Reference Include="Microsoft.SPOT.Native" />
+    <Reference Include="Microsoft.SPOT.Net" />
+    <Reference Include="SecretLabs.NETMF.Hardware" />
+    <Reference Include="SecretLabs.NETMF.Hardware.AnalogInput, Version=4.2.2.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="SecretLabs.NETMF.Hardware.NetduinoPlus, Version=4.2.2.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="SecretLabs.NETMF.Hardware.PWM, Version=4.2.2.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System.IO" />
+    <Reference Include="Toolbox.NETMF.Core">
+      <HintPath>..\..\..\Release (4.2)\Toolbox.NETMF.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Toolbox.NETMF.NET.Core">
+      <HintPath>..\..\..\Release (4.2)\Toolbox.NETMF.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Toolbox.NETMF.NET.Integrated">
+      <HintPath>..\..\..\Release (4.2)\Toolbox.NETMF.NET.Integrated.dll</HintPath>
+    </Reference>
+    <Reference Include="Toolbox.NETMF.NET.SNTP_Client">
+      <HintPath>..\..\..\Release (4.2)\Toolbox.NETMF.NET.SNTP_Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Toolbox.NETMF.NET.TelnetServer">
+      <HintPath>..\..\..\Release (4.2)\Toolbox.NETMF.NET.TelnetServer.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup />
+</Project>

@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Basic Express 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TMP36 Temperature sensor", "TMP36 Temperature sensor\TMP36 Temperature sensor.vbproj", "{DB0DFEEE-1151-4FD2-A86C-0FBF834CA6EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB0DFEEE-1151-4FD2-A86C-0FBF834CA6EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB0DFEEE-1151-4FD2-A86C-0FBF834CA6EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB0DFEEE-1151-4FD2-A86C-0FBF834CA6EC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DB0DFEEE-1151-4FD2-A86C-0FBF834CA6EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB0DFEEE-1151-4FD2-A86C-0FBF834CA6EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB0DFEEE-1151-4FD2-A86C-0FBF834CA6EC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

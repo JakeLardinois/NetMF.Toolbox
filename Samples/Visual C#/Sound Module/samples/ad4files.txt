@@ -1,0 +1,19 @@
+These audio files are downloaded from http://www.bbc.co.uk/doctorwho/sounds/index2006.shtml and then converted:
+- 0000.ad4 - Dalek saying: "Exterminate"
+- 0001.ad4 - Dalek screaming: "Waaaaaaaaaa!"
+- 0002.ad4 - Dalek Emperor saying: "You may not leave my presense"
+- 0003.ad4 - Tardis sound
+- 0004.ad4 - Sonic Screwdriver sound
+
+And these random alarm files are from http://soundjax.com/alarm-1.html:
+- 0005.ad4 - Alarm bell
+- 0006.ad4 - Car alarm
+- 0007.ad4 - Buzzer
+- 0008.ad4 - Beeping
+
+And these are generated with http://www.naturalreaders.com/index.htm:
+- 0009.ad4 - Red
+- 0010.ad4 - Yellow
+- 0011.ad4 - Blue
+- 0012.ad4 - One
+- 0013.ad4 - Two

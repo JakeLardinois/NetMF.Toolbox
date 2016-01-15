@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adafruit Motor Control Shield", "Adafruit Motor Control Shield\Adafruit Motor Control Shield.csproj", "{417B0BB0-5DD3-4C69-89F7-F1A14E94A4F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{417B0BB0-5DD3-4C69-89F7-F1A14E94A4F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{417B0BB0-5DD3-4C69-89F7-F1A14E94A4F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{417B0BB0-5DD3-4C69-89F7-F1A14E94A4F9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{417B0BB0-5DD3-4C69-89F7-F1A14E94A4F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{417B0BB0-5DD3-4C69-89F7-F1A14E94A4F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{417B0BB0-5DD3-4C69-89F7-F1A14E94A4F9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

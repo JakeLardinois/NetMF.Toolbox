@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AssemblyName>RGB Led</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>RGB_Led</RootNamespace>
+    <ProjectTypeGuids>{b69e3092-b931-443c-abe7-7e7b65f2a37f};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CC46C4A7-D0C2-41D2-984E-D1A0B0535B11}</ProjectGuid>
+    <TargetFrameworkVersion>v4.2</TargetFrameworkVersion>
+    <NetMfTargetsBaseDir Condition="'$(NetMfTargetsBaseDir)'==''">$(MSBuildExtensionsPath32)\Microsoft\.NET Micro Framework\</NetMfTargetsBaseDir>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(NetMfTargetsBaseDir)$(TargetFrameworkVersion)\CSharp.Targets" />
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SPOT.Hardware" />
+    <Reference Include="Microsoft.SPOT.Native" />
+    <Reference Include="SecretLabs.NETMF.Hardware" />
+    <Reference Include="SecretLabs.NETMF.Hardware.Netduino" />
+    <Reference Include="Toolbox.NETMF.Hardware.Core">
+      <HintPath>..\..\..\Release (4.2)\Toolbox.NETMF.Hardware.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Toolbox.NETMF.Hardware.Netduino">
+      <HintPath>..\..\..\Release (4.2)\Toolbox.NETMF.Hardware.Netduino.dll</HintPath>
+    </Reference>
+    <Reference Include="Toolbox.NETMF.Hardware.RgbLed">
+      <HintPath>..\..\..\Release (4.2)\Toolbox.NETMF.Hardware.RgbLed.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

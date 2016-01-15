@@ -1,0 +1,17 @@
+syntax: glob
+
+# These files contain user preferences
+*.suo
+*.user
+
+# This folder is used to store temporary object files to create the final binary during compilation
+*/obj/*
+
+# While compiling, these files are copied here, but they're from different manufacturers
+Release*/*/GHIElectronics.*
+Release*/GHIElectronics.*
+Release*/*/SecretLabs.*
+Release*/SecretLabs.*
+
+# Compiled samples shouldn't come in the repository
+Samples/Visual*/*/bin/Debug/*

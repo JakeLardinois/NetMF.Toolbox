@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Basic Express 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Hd44780LcdSnake", "Hd44780LcdSnake\Hd44780LcdSnake.vbproj", "{96F686F4-3495-417B-8A94-3DB86A7A19CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96F686F4-3495-417B-8A94-3DB86A7A19CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96F686F4-3495-417B-8A94-3DB86A7A19CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96F686F4-3495-417B-8A94-3DB86A7A19CF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{96F686F4-3495-417B-8A94-3DB86A7A19CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96F686F4-3495-417B-8A94-3DB86A7A19CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96F686F4-3495-417B-8A94-3DB86A7A19CF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
